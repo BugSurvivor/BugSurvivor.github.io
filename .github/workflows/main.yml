@@ -25,6 +25,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: deploy
       run: |
+        npm install hexo-cli -g
         npm install
         npm install --save hexo-deployer-git
         git config --global user.name jiandahao
